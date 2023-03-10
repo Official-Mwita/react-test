@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 
+const baseurl = "http://192.168.1.200:7030/"; //https://bookingapptrial.azurewebsites.net
 
 
 function Sample() {
@@ -31,7 +32,7 @@ function Sample() {
           };
       //const userJSON = JSON.stringify(user);
   const userTokens = async () => {
-    const {data} = await  axios.post('https://bookingapptrial.azurewebsites.net/login', user, {
+    const {data} = await  axios.post(baseurl + '/login', user, {
       withCredentials: true
     })
     setUser(data.user)
@@ -47,7 +48,7 @@ function Sample() {
   
   return (
     // <div>{user?.email}</div>
-    <div>This is hosted on vercel</div>
+    <div>This is hosted on vercel {baseurl}</div>
   )
 }
 
