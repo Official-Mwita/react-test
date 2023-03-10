@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 
-const baseurl = "http://192.168.1.200:7030/"; //https://bookingapptrial.azurewebsites.net
+const baseurl = "https://bookingapptrial.azurewebsites.net"; //"https://localhost:44325" //http://192.168.1.200:7030/"; //
 
 
 function Sample() {
