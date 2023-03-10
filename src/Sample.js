@@ -46,7 +46,8 @@ function Sample() {
 
   
   return (
-    <div>{user?.email}</div>
+    // <div>{user?.email}</div>
+    <div>This is hosted on vercel</div>
   )
 }
 
